@@ -1,0 +1,79 @@
+/* Header styles */
+header {
+    width: 100%
+}
+
+.header-left {
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.nav__item {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+/* Search pill */
+.search-form {
+  width: 60%;  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;                /* space between icon and input */
+  padding: 8px 12px;         /* vertical, horizontal */
+  background: rgba(0,0,0,0.045);/* dark translucent background like image */
+  border-radius: 9999px;     /* pill */
+  border: 1px solid rgba(255,255,255,0.06); /* subtle border */
+  min-width: 220px;          /* adjust width as needed */
+  height: 36px;              /* consistent height */
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* search button (icon) */
+.btn-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 9999px;
+  font-size: 14px;           /* icon size */
+}
+
+/* hide default input outline but keep keyboard focus visible */
+.search-form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 14px;
+  width: 100%;
+  min-width: 120px;          /* allow expansion */
+}
+
+/* focus-visible for accessibility */
+.search-form:focus-within {
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.12); /* subtle focus ring */
+}
+
+/* optional: narrow screens adjust width */
+@media (max-width: 640px) {
+  .search-form {
+    min-width: 140px;
+  }
+}

@@ -1,0 +1,46 @@
+@import "tailwindcss/preflight.css";
+@import "tailwindcss/utilities.css";
+@import "tailwindcss";
+
+@theme {
+    --color-light-sliver: rgb(51, 51, 51);
+    --color-dark-sliver: rgb(45, 45, 45);
+    --color-btn-infor-hover: #ccc;
+    --color-icon-red: #ff9601;
+    --color-lighter-black: rgba(0, 0, 0, 0.6);
+    --color-trending: #c58560;
+    
+    /* Custom animations */
+    --animate-fadeIn: fadeIn 0.2s ease-in-out;
+    --animate-slideDown: slideDown 0.3s ease-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom global styles can be added here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}

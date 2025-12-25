@@ -1,0 +1,130 @@
+{
+    "defineType": [
+        {
+            "value": "date",
+            "text": "Ngày đăng phim",
+            "isDefault": false
+        },
+        {
+            "value": "views",
+            "text": "Lượt xem",
+            "isDefault": false
+        },
+        {
+            "value": "year",
+            "text": "Năm sản xuất",
+            "isDefault": false
+        },
+        {
+            "value": "name",
+            "text": "Tên phim A-Z",
+            "isDefault": false
+        }
+    ],
+    "typeFilm": [
+        {
+            "value": "hanh-dong",
+            "text": "Hành động",
+            "isDefault": false
+        },
+        {
+            "value": "vien-tuong",
+            "text": "Viễn tưởng",
+            "isDefault": false
+        },
+        {
+            "value": "hai-huoc",
+            "text": "Hài hước",
+            "isDefault": false
+        },
+        {
+            "value": "tinh-cam",
+            "text": "Tình cảm",
+            "isDefault": false
+        },
+        {
+            "value": "kinh-di",
+            "text": "Kinh dị",
+            "isDefault": false
+        },
+        {
+            "value": "trinh-tham",
+            "text": "Trinh thám",
+            "isDefault": false
+        },
+        {
+            "value": "tam-ly",
+            "text": "Tâm lý",
+            "isDefault": false
+        },
+        {
+            "value": "chien-tranh",
+            "text": "Chiến tranh",
+            "isDefault": false
+        }
+    ],
+    "nations": [
+        {
+            "value": "viet-nam",
+            "text": "Việt Nam",
+            "isDefault": false
+        },
+        {
+            "value": "han-quoc",
+            "text": "Hàn Quốc",
+            "isDefault": false
+        },
+        {
+            "value": "my",
+            "text": "Mỹ",
+            "isDefault": false
+        },
+        {
+            "value": "nhat-ban",
+            "text": "Nhật Bản",
+            "isDefault": false
+        },
+        {
+            "value": "trung-quoc",
+            "text": "Trung Quốc",
+            "isDefault": false
+        },
+        {
+            "value": "hong-kong",
+            "text": "Hồng Kông",
+            "isDefault": false
+        }
+    ],
+    "years": [
+        {
+            "value": "2023",
+            "text": "2023",
+            "isDefault": false
+        },
+        {
+            "value": "2022",
+            "text": "2022",
+            "isDefault": false
+        },
+        {
+            "value": "2021",
+            "text": "2021",
+            "isDefault": false
+        },
+        {
+            "value": "2020",
+            "text": "2020",
+            "isDefault": false
+        },
+        {
+            "value": "2019",
+            "text": "2019",
+            "isDefault": false
+        },
+        {
+            "value": "2018",
+            "text": "2018",
+            "isDefault": false
+        }
+    ]
+}

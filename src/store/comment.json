@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "movieId": 20,
+      "user": "JohnDoe",
+      "text": "Great movie! Really enjoyed the plot and characters.",
+      "date": "2024-06-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "movieId": 20,
+      "user": "JaneSmith",
+      "text": "I found the cinematography stunning, but the story was a bit weak.",
+      "date": "2024-06-16T14:45:00Z"
+    },
+    {
+      "id": "3",
+      "movieId": 2,
+      "user": "MovieBuff99",
+      "text": "An absolute masterpiece! A must-watch for everyone.",
+      "date": "2024-06-17T09:20:00Z"
+    },
+    {
+      "id": "4",
+      "movieId": 2,
+      "user": "CinemaLover",
+      "text": "The soundtrack was incredible, really added to the atmosphere.",
+      "date": "2024-06-18T11:15:00Z"
+    },
+    {
+      "id": "5",
+      "movieId": 3,
+      "user": "FilmFanatic",
+      "text": "I didn't connect with the characters, but the visuals were top-notch.",
+      "date": "2024-06-19T13:50:00Z"
+    },
+    {
+      "id": "6",
+      "movieId": 3,
+      "user": "CritiqueMaster",
+      "text": "A solid film overall, but it could have been better paced.",
+      "date": "2024-06-20T15:30:00Z"
+    },
+    {
+      "id": "7",
+      "movieId": 1,
+      "user": "HappyViewer",
+      "text": "Loved every minute of it! The ending was so satisfying.",
+      "date": "2024-06-21T17:00:00Z"
+    },
+    {
+      "id": "4ad5",
+      "movieId": 2,
+      "user": "Trung",
+      "text": "hay quá",
+      "date": "2025-12-24T10:54:47.465Z"
+    },
+    {
+      "id": "fcc9",
+      "movieId": 1,
+      "user": "tram",
+      "text": "hay",
+      "date": "2025-12-24T11:44:30.959Z"
+    }
+  ]
+}
