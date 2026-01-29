@@ -5,6 +5,7 @@ import Banner from "../components/banner/Banner";
 import Movies from "../components/movies/Movies";
 import Trending from "../components/trending/Trending"
 import Ranking from "../components/ranking/Ranking";
+import { getAssetUrl } from "../utils/assetResolver";
 
 import style from './page.module.css';
 
@@ -21,7 +22,7 @@ const IndexPage = () => {
                     listFilm={films.films}
                 ></Carousel>
                 {/* <Banner
-                    imgUrl={"/src/assets/images/banner/banner-rophim.gif"}
+                    imgUrl={getAssetUrl("images/banner/banner-rophim.gif")}
                     alt={"Rạp Phim Banner"}
                 ></Banner> */}
 
@@ -38,7 +39,7 @@ const IndexPage = () => {
                             listFilm={films.films}
                         ></Trending>
                         <div className="trending-banner mt-4">
-                            <img src="/src/assets/images/banner/bannerrobong.gif" alt="banner" className="w-full" />
+                            <img src={getAssetUrl("images/banner/bannerrobong.gif")} alt="banner" className="w-full" />
                         </div>
                         <Ranking
                             title={"Ranking"}

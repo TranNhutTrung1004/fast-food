@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getAssetUrl } from "../../utils/assetResolver";
 
 const RankingCard = ({
   ranking,
@@ -16,6 +17,8 @@ const RankingCard = ({
   const partialStarPercent = ((starRating % 1) * 100).toFixed(2);
   const emptyStars = 5 - Math.ceil(starRating);
 
+  const imageUrl = getAssetUrl(`images/films/${imgUrl}`);
+
   return (
     <Link
       to={`/phim/${slug}`}
@@ -23,7 +26,7 @@ const RankingCard = ({
     >
       <div className={`w-[40%]`}>
         <img
-          src={`/src/assets/images/films/${imgUrl}`}
+          src={imageUrl}
           alt={alt}
           className="w-full h-[106px] object-fill"
         />

@@ -4,6 +4,7 @@ import InforButton from "../button/InforButton";
 import SearchBar from "./SearchBar";
 import NavLinks from "./NavLinks";
 import style from "./header.module.css";
+import { getAssetUrl } from "../../utils/assetResolver";
 
 const HeaderTop = () => {
   const [isOpenSearch, setIsOpenSearch] = useState(false);
@@ -54,7 +55,7 @@ const HeaderTop = () => {
           className="link-img-logo h-full block"
         >
           <img
-            src="/src/assets/icons/Logo.png"
+            src={getAssetUrl("icons/Logo.png")}
             alt="Logo"
             className="header-img-logo h-full object-contain"
           />

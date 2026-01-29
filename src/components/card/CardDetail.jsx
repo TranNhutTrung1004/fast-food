@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { getAssetUrl } from "../../utils/assetResolver";
 
 import style from "./card.module.css";
 import CardDetailItem from "./CardDetailItem";
@@ -11,13 +12,15 @@ const CardDetail = ({ film }) => {
   const partialStarPercent = ((starRating % 1) * 100).toFixed(2);
   const emptyStars = 5 - Math.ceil(starRating);
 
+  const imageUrl = getAssetUrl(`images/films/${film.image}`);
+
   return (
     <section className="w-full mb-10">
       <div className="card-movie-detail w-full p-2 flex items-start gap-5 text-[#bbb] h-[390px] md:h-[450px] mb-5">
         <Link to={"#"} className="w-[50%] md:w-[45%] h-full">
           <div className={`${style["card-detail-left"]} relative h-full`}>
             <img
-              src={`/src/assets/images/films/${film.image}`}
+              src={imageUrl}
               alt={film.name}
               className={`${style["card-detail-img"]} h-[380px] md:h-full object-cover`}
               loading="lazy"

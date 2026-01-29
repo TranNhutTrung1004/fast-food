@@ -1,22 +1,23 @@
 import AdvertItem from "./AdvertItem";
 import AdvertList from "./AdvertList";
+import { getAssetUrl } from "../../utils/assetResolver";
 
 const Advert = () => {
   return (
     <div className="advert text-center my-6">
       <AdvertList>
         <AdvertItem
-          imageUrl="/src/assets/images/advert/advert_1.gif"
+          imageUrl={getAssetUrl("images/advert/advert_1.gif")}
           altText="Advert 1"
           linkUrl="https://ok9vip8.com/qcweb38"
         />
         <AdvertItem
-          imageUrl="/src/assets/images/advert/advert_2.gif"
+          imageUrl={getAssetUrl("images/advert/advert_2.gif")}
           altText="Advert 2"
           linkUrl="https://moneycat.vn/?utm_source=smm_entertainment&utm_medium=cpm&utm_campaign=smm_entertainment&utm_content=smm_entertainment&utm_term=smm_entertainment"
         />
         <AdvertItem
-          imageUrl="/src/assets/images/advert/advert_3.gif"
+          imageUrl={getAssetUrl("images/advert/advert_3.gif")}
           altText="Advert 3"
           linkUrl="https://6789x.site/ad9namei77"
         />

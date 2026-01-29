@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { getAssetUrl } from "../../utils/assetResolver";
 
 const SearchCard = ({ imgUrl, name, duration, slug }) => {
+  const imageUrl = getAssetUrl(`images/films/${imgUrl}`);
+
   return (
     <Link
       to={`/phim/${slug}`}
@@ -8,7 +11,7 @@ const SearchCard = ({ imgUrl, name, duration, slug }) => {
     >
       <div className="w-full flex justify-between items-center">
         <div className="w-[40%] h-full">
-          <img src={`/src/assets/images/films/${imgUrl}`} className="w-full h-full" alt={name} />
+          <img src={imageUrl} className="w-full h-full" alt={name} />
         </div>
         <div className="w-[60%] h-full flex flex-col justify-center items-center text-center">
           <h3 className="text-[13px]">{name}</h3>

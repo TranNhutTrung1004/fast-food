@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getAssetUrl } from "../../utils/assetResolver";
 
 const VideoCard = ({
   videoImage,
@@ -10,6 +11,7 @@ const VideoCard = ({
   slug,
 }) => {
   const linkPath = `phim/${slug}`;
+  const imageUrl = getAssetUrl(`images/films/${videoImage}`);
 
   return (
     <Link
@@ -18,7 +20,7 @@ const VideoCard = ({
     >
       <div className="video-card-img h-full w-full">
         <img
-          src={`../../assets/images/${videoImage}`}
+          src={imageUrl}
           alt={videoName}
           loading="lazy"
           className="w-full h-full hover:scale-150 ease-in-out duration-300"
