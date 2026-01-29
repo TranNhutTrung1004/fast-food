@@ -9,6 +9,8 @@ import SearchPage from "../pages/SearchPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import FilterPage from "../pages/FilterPage";
 
+const basename = import.meta.env.BASE_URL;
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -50,5 +52,5 @@ export const router = createBrowserRouter([
     element: <NotFoundPage />
   }
 ], {
-  basename: "/fast-food"
+  basename
 });
